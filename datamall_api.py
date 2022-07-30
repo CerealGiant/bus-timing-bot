@@ -18,7 +18,6 @@ def getData(busStopCode):
 	r = requests.get(final_url,headers=HEADERS,params=parameters)
 		
 	#Converting into a python dict
-	print(r.content)
 	file = json.loads(r.content)
 		
 	return file
